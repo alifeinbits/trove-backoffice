@@ -1,0 +1,6765 @@
+{
+  "tables": [
+    {
+      "id": "tw1h6XVgFWC",
+      "sdkName": "invitations",
+      "name": "Invitations",
+      "primaryFieldId": "f9xZPYWnBQ9",
+      "fields": [
+        {
+          "id": "f9xZPYWnBQ9",
+          "sdkName": "code",
+          "definition": {
+            "name": "Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7asqfNkjQ6",
+          "sdkName": "entityName",
+          "definition": {
+            "name": "Entity Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fr61frtkUfu",
+          "sdkName": "entityType",
+          "definition": {
+            "name": "Entity Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "t5U7",
+                  "label": "Dealer",
+                  "color": "purple"
+                },
+                {
+                  "value": "bBvh",
+                  "label": "Supplier",
+                  "color": "orange"
+                },
+                {
+                  "value": "7Tzi",
+                  "label": "Anchor Buyer",
+                  "color": "blue"
+                },
+                {
+                  "value": "3auL",
+                  "label": "Anchor",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fut9187ReGv",
+          "sdkName": "contactEmail",
+          "definition": {
+            "name": "Contact Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "ff5NC8XtZ9t",
+          "sdkName": "contactPhone",
+          "definition": {
+            "name": "Contact Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7G5mJ28Xhk",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "1QuC",
+                  "label": "Pending Sign-up",
+                  "color": "purple"
+                },
+                {
+                  "value": "bDWa",
+                  "label": "Signed Up",
+                  "color": "orange"
+                },
+                {
+                  "value": "9qBr",
+                  "label": "Onboarding",
+                  "color": "blue"
+                },
+                {
+                  "value": "dxqM",
+                  "label": "Expired",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fp4Un5QNfze",
+          "sdkName": "sentVia",
+          "definition": {
+            "name": "Sent Via",
+            "type": "multiple_select",
+            "template": {
+              "options": [
+                {
+                  "value": "uZCs",
+                  "label": "Email",
+                  "color": "purple"
+                },
+                {
+                  "value": "tMra",
+                  "label": "SMS",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "faA3CnNfKs2",
+          "sdkName": "sentAt",
+          "definition": {
+            "name": "Sent At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "ffU3aLXhbp1",
+          "sdkName": "expiresAt",
+          "definition": {
+            "name": "Expires At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fpuJZQLk7dc",
+          "sdkName": "createdBy",
+          "definition": {
+            "name": "Created By",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fjWEKUTt7V2",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnPQ7rbp73i",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "t1WF",
+                  "label": "Invoice Finance",
+                  "color": "purple"
+                },
+                {
+                  "value": "sGgu",
+                  "label": "Reverse Factoring",
+                  "color": "orange"
+                },
+                {
+                  "value": "5m1h",
+                  "label": "Invoice Discounting",
+                  "color": "blue"
+                },
+                {
+                  "value": "kmXd",
+                  "label": "Blended Finance",
+                  "color": "gray"
+                },
+                {
+                  "value": "exTQ",
+                  "label": "Leasing",
+                  "color": "red"
+                },
+                {
+                  "value": "iawf",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5xjTW6SrXN",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f3weCwT15BW"
+            }
+          }
+        },
+        {
+          "id": "fic3tq8oSCF",
+          "sdkName": "recommenderEntity",
+          "definition": {
+            "name": "Recommender Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f9xSku1vTZT"
+            }
+          }
+        },
+        {
+          "id": "fgvqnzwQgzg",
+          "sdkName": "proposedLimit",
+          "definition": {
+            "name": "Proposed Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fd6bpVcSfuM",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcTmDUEmY6J",
+          "sdkName": "entities",
+          "definition": {
+            "name": "Entities",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f9BLgHuhMJg"
+            }
+          }
+        },
+        {
+          "id": "fxpWB4r7LCh",
+          "sdkName": "onboardings",
+          "definition": {
+            "name": "Onboardings",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f8pEr8HQf2q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tsKBeKbTq9Y",
+      "sdkName": "notifications",
+      "name": "Notifications",
+      "primaryFieldId": "fd2VMSkHhBQ",
+      "fields": [
+        {
+          "id": "fd2VMSkHhBQ",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8usNjAYHAz",
+          "sdkName": "message",
+          "definition": {
+            "name": "Message",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foML5C2xaAk",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "6xmY",
+                  "label": "Entity Approved",
+                  "color": "purple"
+                },
+                {
+                  "value": "27FP",
+                  "label": "Entity Rejected",
+                  "color": "orange"
+                },
+                {
+                  "value": "shTX",
+                  "label": "Limit Offer",
+                  "color": "blue"
+                },
+                {
+                  "value": "5MmN",
+                  "label": "Financing Approved",
+                  "color": "gray"
+                },
+                {
+                  "value": "qkrk",
+                  "label": "Disbursement",
+                  "color": "red"
+                },
+                {
+                  "value": "5B34",
+                  "label": "Repayment Confirmed",
+                  "color": "yellow"
+                },
+                {
+                  "value": "fjTk",
+                  "label": "Loan Overdue",
+                  "color": "green"
+                },
+                {
+                  "value": "ac7E",
+                  "label": "Compliance Alert",
+                  "color": "pink"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f4XwpQFkQNh",
+          "sdkName": "read",
+          "definition": {
+            "name": "Read",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpgzUKKFcpj",
+          "sdkName": "linkPath",
+          "definition": {
+            "name": "Link Path",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjhmydbGea7",
+          "sdkName": "recipient",
+          "definition": {
+            "name": "Recipient",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fnKrcRgE343",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuAo25iC1Rc",
+      "sdkName": "systemSettings",
+      "name": "System Settings",
+      "primaryFieldId": "fpuTYzF6f7o",
+      "fields": [
+        {
+          "id": "fpuTYzF6f7o",
+          "sdkName": "key",
+          "definition": {
+            "name": "Key",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwSq1KYrRHC",
+          "sdkName": "value",
+          "definition": {
+            "name": "Value",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcy8qhVQoru",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frX1FvhzsZ1",
+          "sdkName": "updatedAt",
+          "definition": {
+            "name": "Updated At",
+            "type": "updated_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f9Sn7gDJGLD",
+          "sdkName": "updatedBy",
+          "definition": {
+            "name": "Updated By",
+            "type": "updated_by",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuG3VPBdCyC",
+      "sdkName": "backofficeUsers",
+      "name": "Backoffice Users",
+      "primaryFieldId": "f9aScXXZZNo",
+      "fields": [
+        {
+          "id": "f9aScXXZZNo",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4x7sBE3D5i",
+          "sdkName": "role",
+          "definition": {
+            "name": "Role",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vUPm",
+                  "label": "Super Admin",
+                  "color": "purple"
+                },
+                {
+                  "value": "chuf",
+                  "label": "Maker",
+                  "color": "orange"
+                },
+                {
+                  "value": "2X1Z",
+                  "label": "Checker",
+                  "color": "blue"
+                },
+                {
+                  "value": "u33F",
+                  "label": "FI Admin",
+                  "color": "gray"
+                },
+                {
+                  "value": "kHCN",
+                  "label": "FI Checker",
+                  "color": "red"
+                },
+                {
+                  "value": "54w2",
+                  "label": "Master Anchor Admin",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fayx38W9P5S",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": true
+            }
+          }
+        },
+        {
+          "id": "fhT4n1ngZcx",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fwGEz3M7efr",
+          "sdkName": "apiPartner",
+          "definition": {
+            "name": "API Partner",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t12qm8kYfT8",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fbkbN3pwvun"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tgmtim5RuLU",
+      "sdkName": "entities",
+      "name": "Entities",
+      "primaryFieldId": "fodujGxUD5w",
+      "fields": [
+        {
+          "id": "fodujGxUD5w",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmzYRj77AU5",
+          "sdkName": "entityType",
+          "definition": {
+            "name": "Entity Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "5PeW",
+                  "label": "Dealer",
+                  "color": "purple"
+                },
+                {
+                  "value": "fYe1",
+                  "label": "Supplier",
+                  "color": "orange"
+                },
+                {
+                  "value": "fuvi",
+                  "label": "Anchor Buyer",
+                  "color": "blue"
+                },
+                {
+                  "value": "wv93",
+                  "label": "Anchor",
+                  "color": "gray"
+                },
+                {
+                  "value": "21Kn",
+                  "label": "Master Anchor",
+                  "color": "red"
+                },
+                {
+                  "value": "x4ur",
+                  "label": "FI",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f3BGF2QHyh3",
+          "sdkName": "kycStatus",
+          "definition": {
+            "name": "KYC Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "spRK",
+                  "label": "Pending",
+                  "color": "gray"
+                },
+                {
+                  "value": "hZSZ",
+                  "label": "In Review",
+                  "color": "yellow"
+                },
+                {
+                  "value": "wn8s",
+                  "label": "Approved",
+                  "color": "green"
+                },
+                {
+                  "value": "4T8X",
+                  "label": "Rejected",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fk7GkTXkt1M",
+          "sdkName": "contactEmail",
+          "definition": {
+            "name": "Contact Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3kWmr61SrD",
+          "sdkName": "contactPhone",
+          "definition": {
+            "name": "Contact Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "febBgFiHpwU",
+          "sdkName": "registrationNumber",
+          "definition": {
+            "name": "Registration Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frrqQP8oJzM",
+          "sdkName": "approvedLimit",
+          "definition": {
+            "name": "Approved Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f9BLgHuhMJg",
+          "sdkName": "invitation",
+          "definition": {
+            "name": "Invitation",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tw1h6XVgFWC",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fcTmDUEmY6J"
+            }
+          }
+        },
+        {
+          "id": "frZ3FXot3FE",
+          "sdkName": "owner",
+          "definition": {
+            "name": "Owner",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "f3YgCrPxLWp",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fsD22TrtW2k",
+          "sdkName": "kraPin",
+          "definition": {
+            "name": "KRA PIN",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4wYioFgvs9",
+          "sdkName": "businessSector",
+          "definition": {
+            "name": "Business Sector",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2yCnMRBo7a",
+          "sdkName": "physicalAddress",
+          "definition": {
+            "name": "Physical Address",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvpwaMBUemJ",
+          "sdkName": "onboardingStatus",
+          "definition": {
+            "name": "Onboarding Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ep5z",
+                  "label": "Not Started",
+                  "color": "gray"
+                },
+                {
+                  "value": "wCks",
+                  "label": "In Progress",
+                  "color": "blue"
+                },
+                {
+                  "value": "muuu",
+                  "label": "Awaiting Review",
+                  "color": "yellow"
+                },
+                {
+                  "value": "3N36",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "bz4N",
+                  "label": "Suspended",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f9xSku1vTZT",
+          "sdkName": "invitations",
+          "definition": {
+            "name": "Invitations",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tw1h6XVgFWC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fic3tq8oSCF"
+            }
+          }
+        },
+        {
+          "id": "fajF4CEyqU6",
+          "sdkName": "programs",
+          "definition": {
+            "name": "Programs",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "ff4SPJCmqFw"
+            }
+          }
+        },
+        {
+          "id": "f28KoKYrp1q",
+          "sdkName": "loans",
+          "definition": {
+            "name": "Loans",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f3rNuAXq8Hq"
+            }
+          }
+        },
+        {
+          "id": "fpimdKKf83E",
+          "sdkName": "onboardings",
+          "definition": {
+            "name": "Onboardings",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fjm6rigUgUj"
+            }
+          }
+        },
+        {
+          "id": "fpBsAvitxeD",
+          "sdkName": "entityOwners",
+          "definition": {
+            "name": "Entity Owners",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2JSPZ82pf1",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "find8bUbDyh"
+            }
+          }
+        },
+        {
+          "id": "fopvsynyWQq",
+          "sdkName": "entityOperators",
+          "definition": {
+            "name": "Entity Operators",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tnRNdeQsMPb",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fkQaXxToaEA"
+            }
+          }
+        },
+        {
+          "id": "f5yzQBbLZLM",
+          "sdkName": "limitProposals",
+          "definition": {
+            "name": "Limit Proposals",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcHpAdUQEtY",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "ffWR3joQRjp"
+            }
+          }
+        },
+        {
+          "id": "fka1mcKb1fa",
+          "sdkName": "invoices",
+          "definition": {
+            "name": "Invoices",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tx4MkLpijxk",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f9cWG93eJkk"
+            }
+          }
+        },
+        {
+          "id": "f6WfXbg6nqD",
+          "sdkName": "invoices1",
+          "definition": {
+            "name": "Invoices (1)",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tx4MkLpijxk",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f31ypqpGuug"
+            }
+          }
+        },
+        {
+          "id": "fi2zfJwPSaL",
+          "sdkName": "financingRequests",
+          "definition": {
+            "name": "Financing Requests",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f7c1YGPCPhB"
+            }
+          }
+        },
+        {
+          "id": "f46R22gsQ3z",
+          "sdkName": "financingRequests1",
+          "definition": {
+            "name": "Financing Requests (1)",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fd1BVPTBud6"
+            }
+          }
+        },
+        {
+          "id": "f2nZiPXaMzT",
+          "sdkName": "offerLetters",
+          "definition": {
+            "name": "Offer Letters",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tsZ7cho7iZA",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fuUzfRuyPmU"
+            }
+          }
+        },
+        {
+          "id": "frm1iMBypPR",
+          "sdkName": "journalEntries",
+          "definition": {
+            "name": "Journal Entries",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpuwNn6KizZ",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f58CLPWvo7q"
+            }
+          }
+        },
+        {
+          "id": "fwCk2R4Dd2F",
+          "sdkName": "creditScores",
+          "definition": {
+            "name": "Credit Scores",
+            "type": "linked_record",
+            "template": {
+              "tableId": "thNjhfLFcFE",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fk9Nxy6skiy"
+            }
+          }
+        },
+        {
+          "id": "faNk6suq4ak",
+          "sdkName": "riskAlerts",
+          "definition": {
+            "name": "Risk Alerts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tiCvFMUsTf4",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f8eCrFUhAtr"
+            }
+          }
+        },
+        {
+          "id": "fnnV3yWgpXM",
+          "sdkName": "bankAccounts",
+          "definition": {
+            "name": "Bank Accounts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t9LRGqwtDtt",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f23LMFtngFV"
+            }
+          }
+        },
+        {
+          "id": "f5HvZnRc3kY",
+          "sdkName": "assetSchedules",
+          "definition": {
+            "name": "Asset Schedules",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcE17Djj9si",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "foF6CFhQt8y"
+            }
+          }
+        },
+        {
+          "id": "fojtDFw8YLt",
+          "sdkName": "warehouseReceipts",
+          "definition": {
+            "name": "Warehouse Receipts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tjWPyzHcztg",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f885dRWr51E"
+            }
+          }
+        },
+        {
+          "id": "fhFRMum2Msx",
+          "sdkName": "apiActivityLog",
+          "definition": {
+            "name": "API Activity Log",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tkV7mZgbfAN",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "forJx5bRdte"
+            }
+          }
+        },
+        {
+          "id": "f9haD5u37Kf",
+          "sdkName": "createdByPartner",
+          "definition": {
+            "name": "Created By Partner",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t12qm8kYfT8",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fvjQY1jHNUA"
+            }
+          }
+        },
+        {
+          "id": "f5YidTzKSt7",
+          "sdkName": "allowSelfInvoicing",
+          "definition": {
+            "name": "Allow Self-Invoicing",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8226ZRkyTz",
+      "sdkName": "programs",
+      "name": "Programs",
+      "primaryFieldId": "f2DksuYgRDY",
+      "fields": [
+        {
+          "id": "f2DksuYgRDY",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkDU86JTkcH",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "oA4J",
+                  "label": "Invoice Finance",
+                  "color": "blue"
+                },
+                {
+                  "value": "8UGq",
+                  "label": "Reverse Factoring",
+                  "color": "emerald"
+                },
+                {
+                  "value": "ad1Q",
+                  "label": "Invoice Discounting",
+                  "color": "orange"
+                },
+                {
+                  "value": "f2Nn",
+                  "label": "Blended Finance",
+                  "color": "purple"
+                },
+                {
+                  "value": "cZxg",
+                  "label": "Leasing",
+                  "color": "sky"
+                },
+                {
+                  "value": "eKmQ",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "ff4SPJCmqFw",
+          "sdkName": "anchorEntity",
+          "definition": {
+            "name": "Anchor Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fajF4CEyqU6"
+            }
+          }
+        },
+        {
+          "id": "f8Fgx51E7vh",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "doi3",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "298Z",
+                  "label": "Suspended",
+                  "color": "yellow"
+                },
+                {
+                  "value": "wf6X",
+                  "label": "Closed",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f2gZWWueD8S",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foqBLXzjVTR",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f1BBZJmJzee",
+          "sdkName": "programSize",
+          "definition": {
+            "name": "Program Size",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fgbtXoFBwRS",
+          "sdkName": "creditPeriodDays",
+          "definition": {
+            "name": "Credit Period Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fp3Mk1EHM92",
+          "sdkName": "financePercentage",
+          "definition": {
+            "name": "Finance Percentage",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 1,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f453VkYTTKE",
+          "sdkName": "minParticipantLimit",
+          "definition": {
+            "name": "Min Participant Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f3km26AYriD",
+          "sdkName": "maxParticipantLimit",
+          "definition": {
+            "name": "Max Participant Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fihuXEJxPoM",
+          "sdkName": "approvalDate",
+          "definition": {
+            "name": "Approval Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fauWUFXZBq2",
+          "sdkName": "renewalDate",
+          "definition": {
+            "name": "Renewal Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f8CtNTrGtGW",
+          "sdkName": "programOwnerType",
+          "definition": {
+            "name": "Program Owner Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "7vMY",
+                  "label": "Master Anchor",
+                  "color": "blue"
+                },
+                {
+                  "value": "t7xg",
+                  "label": "Anchor Buyer",
+                  "color": "green"
+                },
+                {
+                  "value": "aKZV",
+                  "label": "FI",
+                  "color": "purple"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f3weCwT15BW",
+          "sdkName": "invitations",
+          "definition": {
+            "name": "Invitations",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tw1h6XVgFWC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f5xjTW6SrXN"
+            }
+          }
+        },
+        {
+          "id": "f9RRbPVfaoo",
+          "sdkName": "loans",
+          "definition": {
+            "name": "Loans",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fxmG3moVw8d"
+            }
+          }
+        },
+        {
+          "id": "foRXbuCymz6",
+          "sdkName": "onboardings",
+          "definition": {
+            "name": "Onboardings",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "feA64atkUat"
+            }
+          }
+        },
+        {
+          "id": "fgUrvZ4WdkR",
+          "sdkName": "limitProposals",
+          "definition": {
+            "name": "Limit Proposals",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcHpAdUQEtY",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f1ccJvdK7A1"
+            }
+          }
+        },
+        {
+          "id": "fkzM3Maskbi",
+          "sdkName": "invoices",
+          "definition": {
+            "name": "Invoices",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tx4MkLpijxk",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f3Ja3LadHeu"
+            }
+          }
+        },
+        {
+          "id": "f2Rx2F1hFrW",
+          "sdkName": "financingRequests",
+          "definition": {
+            "name": "Financing Requests",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fdFAnawcJSy"
+            }
+          }
+        },
+        {
+          "id": "f2VYros6Z9A",
+          "sdkName": "offerLetters",
+          "definition": {
+            "name": "Offer Letters",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tsZ7cho7iZA",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fa7vyLhgfRt"
+            }
+          }
+        },
+        {
+          "id": "fwL4BLJjhcZ",
+          "sdkName": "fiProgramPricing",
+          "definition": {
+            "name": "FI Program Pricing",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8MAqACwXo3",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "feMNx4JQhHb"
+            }
+          }
+        },
+        {
+          "id": "ffps64L6FVV",
+          "sdkName": "journalEntries",
+          "definition": {
+            "name": "Journal Entries",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpuwNn6KizZ",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f1JCDqoZSFq"
+            }
+          }
+        },
+        {
+          "id": "f9DrrDGFKAH",
+          "sdkName": "riskAlerts",
+          "definition": {
+            "name": "Risk Alerts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tiCvFMUsTf4",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fjwAwge76vH"
+            }
+          }
+        },
+        {
+          "id": "fqqw9D6DyHT",
+          "sdkName": "assetSchedules",
+          "definition": {
+            "name": "Asset Schedules",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcE17Djj9si",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fqoXvu84iwB"
+            }
+          }
+        },
+        {
+          "id": "fm9AA6MPu8K",
+          "sdkName": "warehouseReceipts",
+          "definition": {
+            "name": "Warehouse Receipts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tjWPyzHcztg",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fwfXVaDQxLU"
+            }
+          }
+        },
+        {
+          "id": "fxrKsiuzX3j",
+          "sdkName": "createdByPartner",
+          "definition": {
+            "name": "Created By Partner",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t12qm8kYfT8",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f5SrFdr8Vh8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tvqGcFhhKDv",
+      "sdkName": "loans",
+      "name": "Loans",
+      "primaryFieldId": "fn37zD5iNy5",
+      "fields": [
+        {
+          "id": "fn37zD5iNy5",
+          "sdkName": "loanReference",
+          "definition": {
+            "name": "Loan Reference",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3rNuAXq8Hq",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f28KoKYrp1q"
+            }
+          }
+        },
+        {
+          "id": "fxmG3moVw8d",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f9RRbPVfaoo"
+            }
+          }
+        },
+        {
+          "id": "fqnFmvTb74L",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "wq9v",
+                  "label": "Invoice Finance",
+                  "color": "blue"
+                },
+                {
+                  "value": "1Kjn",
+                  "label": "Reverse Factoring",
+                  "color": "emerald"
+                },
+                {
+                  "value": "cx9S",
+                  "label": "Invoice Discounting",
+                  "color": "orange"
+                },
+                {
+                  "value": "wPsx",
+                  "label": "Blended Finance",
+                  "color": "purple"
+                },
+                {
+                  "value": "oPrY",
+                  "label": "Leasing",
+                  "color": "sky"
+                },
+                {
+                  "value": "bUSg",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fq5zB9wHxq2",
+          "sdkName": "principal",
+          "definition": {
+            "name": "Principal",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fj6deMtvrmC",
+          "sdkName": "outstandingBalance",
+          "definition": {
+            "name": "Outstanding Balance",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fnd9bYNzCqi",
+          "sdkName": "interestRate",
+          "definition": {
+            "name": "Interest Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fmQ9Mh876y9",
+          "sdkName": "penaltyAmount",
+          "definition": {
+            "name": "Penalty Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f5HE8hhQQeE",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "9tow",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "xons",
+                  "label": "Overdue",
+                  "color": "red"
+                },
+                {
+                  "value": "wkej",
+                  "label": "Settled",
+                  "color": "gray"
+                },
+                {
+                  "value": "ijqr",
+                  "label": "Written Off",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f2u9E4BxQB3",
+          "sdkName": "disbursedAt",
+          "definition": {
+            "name": "Disbursed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fckY8zAHrJd",
+          "sdkName": "maturityDate",
+          "definition": {
+            "name": "Maturity Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fm1ntqfCsdu",
+          "sdkName": "daysOverdue",
+          "definition": {
+            "name": "Days Overdue",
+            "type": "number",
+            "template": {
+              "defaultValue": 0,
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fttRKnTLyHA",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fmz164BhyKS",
+          "sdkName": "borrowerEntityType",
+          "definition": {
+            "name": "Borrower Entity Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "v2XA",
+                  "label": "Dealer",
+                  "color": "purple"
+                },
+                {
+                  "value": "hTxa",
+                  "label": "Anchor Buyer",
+                  "color": "orange"
+                },
+                {
+                  "value": "5YNk",
+                  "label": "Supplier",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f2vzNiuKcGK",
+          "sdkName": "transactions",
+          "definition": {
+            "name": "Transactions",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t3aLWiRFhAe",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fgG4CgoYrGX"
+            }
+          }
+        },
+        {
+          "id": "f6xqT9hKdb8",
+          "sdkName": "financingRequests",
+          "definition": {
+            "name": "Financing Requests",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fsmnNUXNwKE"
+            }
+          }
+        },
+        {
+          "id": "fwVaH7xdVYm",
+          "sdkName": "journalEntries",
+          "definition": {
+            "name": "Journal Entries",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpuwNn6KizZ",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f4Kg5oDS5nk"
+            }
+          }
+        },
+        {
+          "id": "f4rnXhRbqyz",
+          "sdkName": "assetSchedules",
+          "definition": {
+            "name": "Asset Schedules",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcE17Djj9si",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f7jmmxy6kA9"
+            }
+          }
+        },
+        {
+          "id": "f43XgmGLzCv",
+          "sdkName": "warehouseReceipts",
+          "definition": {
+            "name": "Warehouse Receipts",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tjWPyzHcztg",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fnqzXYmEnLH"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t3aLWiRFhAe",
+      "sdkName": "transactions",
+      "name": "Transactions",
+      "primaryFieldId": "f2wSRwtA6KG",
+      "fields": [
+        {
+          "id": "f2wSRwtA6KG",
+          "sdkName": "reference",
+          "definition": {
+            "name": "Reference",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgG4CgoYrGX",
+          "sdkName": "loan",
+          "definition": {
+            "name": "Loan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f2vzNiuKcGK"
+            }
+          }
+        },
+        {
+          "id": "f9dkynu2Xrg",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ru2X",
+                  "label": "Disbursement",
+                  "color": "blue"
+                },
+                {
+                  "value": "r3fy",
+                  "label": "Repayment",
+                  "color": "green"
+                },
+                {
+                  "value": "vnRM",
+                  "label": "Penalty",
+                  "color": "red"
+                },
+                {
+                  "value": "mY4h",
+                  "label": "Interest",
+                  "color": "orange"
+                },
+                {
+                  "value": "5ec1",
+                  "label": "Fee",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fx16APD56gn",
+          "sdkName": "amount",
+          "definition": {
+            "name": "Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fe4GMa4mfxb",
+          "sdkName": "paymentMethod",
+          "definition": {
+            "name": "Payment Method",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "hZnP",
+                  "label": "M-Pesa",
+                  "color": "green"
+                },
+                {
+                  "value": "aReN",
+                  "label": "Bank Transfer",
+                  "color": "blue"
+                },
+                {
+                  "value": "n9mF",
+                  "label": "System",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fkm4e7bXJ7Q",
+          "sdkName": "mPesaReceipt",
+          "definition": {
+            "name": "M-Pesa Receipt",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsXEPskzt7S",
+          "sdkName": "phoneNumber",
+          "definition": {
+            "name": "Phone Number",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6RHPTqzvdd",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "4rzs",
+                  "label": "Pending",
+                  "color": "yellow"
+                },
+                {
+                  "value": "i9Uv",
+                  "label": "Completed",
+                  "color": "green"
+                },
+                {
+                  "value": "ehyY",
+                  "label": "Failed",
+                  "color": "red"
+                },
+                {
+                  "value": "47fL",
+                  "label": "Reversed",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fpwNYGMdSpm",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2D8B3qaVWy",
+      "sdkName": "onboardings",
+      "name": "Onboardings",
+      "primaryFieldId": "fb9K4pnjBJm",
+      "fields": [
+        {
+          "id": "fb9K4pnjBJm",
+          "sdkName": "onboardingNumber",
+          "definition": {
+            "name": "Onboarding Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjm6rigUgUj",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fpimdKKf83E"
+            }
+          }
+        },
+        {
+          "id": "feA64atkUat",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "foRXbuCymz6"
+            }
+          }
+        },
+        {
+          "id": "fpCmnbWqEip",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "v8G9",
+                  "label": "Invoice Finance",
+                  "color": "blue"
+                },
+                {
+                  "value": "6xLK",
+                  "label": "Reverse Factoring",
+                  "color": "purple"
+                },
+                {
+                  "value": "6bbC",
+                  "label": "Invoice Discounting",
+                  "color": "teal"
+                },
+                {
+                  "value": "8os4",
+                  "label": "Blended Finance",
+                  "color": "emerald"
+                },
+                {
+                  "value": "cbEi",
+                  "label": "Leasing",
+                  "color": "orange"
+                },
+                {
+                  "value": "tTGJ",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f7ywZm87ctF",
+          "sdkName": "entityType",
+          "definition": {
+            "name": "Entity Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "xv9w",
+                  "label": "Dealer",
+                  "color": "blue"
+                },
+                {
+                  "value": "7FMf",
+                  "label": "Supplier",
+                  "color": "purple"
+                },
+                {
+                  "value": "vTq4",
+                  "label": "Anchor Buyer",
+                  "color": "emerald"
+                },
+                {
+                  "value": "rn4J",
+                  "label": "Anchor",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fmtauLHdDid",
+          "sdkName": "currentStage",
+          "definition": {
+            "name": "Current Stage",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mEcc",
+                  "label": "Business Details",
+                  "color": "purple"
+                },
+                {
+                  "value": "npRa",
+                  "label": "Document Upload",
+                  "color": "orange"
+                },
+                {
+                  "value": "8qNQ",
+                  "label": "Owner Details",
+                  "color": "blue"
+                },
+                {
+                  "value": "2ZDq",
+                  "label": "Owner KYC Documents",
+                  "color": "gray"
+                },
+                {
+                  "value": "rbMz",
+                  "label": "Location Photo",
+                  "color": "red"
+                },
+                {
+                  "value": "4h1s",
+                  "label": "Bank Statement",
+                  "color": "yellow"
+                },
+                {
+                  "value": "u5Jx",
+                  "label": "Bank Details",
+                  "color": "green"
+                },
+                {
+                  "value": "bQzj",
+                  "label": "Operators",
+                  "color": "pink"
+                },
+                {
+                  "value": "t8Vp",
+                  "label": "Limit Proposal",
+                  "color": "lime"
+                },
+                {
+                  "value": "9aZA",
+                  "label": "Submitted for Review",
+                  "color": "tangerine"
+                },
+                {
+                  "value": "cZbo",
+                  "label": "Maker Review",
+                  "color": "emerald"
+                },
+                {
+                  "value": "2kZs",
+                  "label": "Checker Review",
+                  "color": "sky"
+                },
+                {
+                  "value": "ba69",
+                  "label": "FI Document Review",
+                  "color": "teal"
+                },
+                {
+                  "value": "e5iF",
+                  "label": "Sent to FI",
+                  "color": "indigo"
+                },
+                {
+                  "value": "93gZ",
+                  "label": "Offer Generated",
+                  "color": "cyan"
+                },
+                {
+                  "value": "itUm",
+                  "label": "Awaiting Offer Response",
+                  "color": "violet"
+                },
+                {
+                  "value": "eVby",
+                  "label": "Completed",
+                  "color": "fuchsia"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fvv5vGViUt9",
+          "sdkName": "overallStatus",
+          "definition": {
+            "name": "Overall Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "wbbP",
+                  "label": "Not Started",
+                  "color": "purple"
+                },
+                {
+                  "value": "cGCF",
+                  "label": "In Progress",
+                  "color": "orange"
+                },
+                {
+                  "value": "b1M4",
+                  "label": "Awaiting Review",
+                  "color": "blue"
+                },
+                {
+                  "value": "nzz8",
+                  "label": "Approved",
+                  "color": "gray"
+                },
+                {
+                  "value": "4aqJ",
+                  "label": "Rejected",
+                  "color": "red"
+                },
+                {
+                  "value": "dAs6",
+                  "label": "Pending FI Review",
+                  "color": "yellow"
+                },
+                {
+                  "value": "5Bum",
+                  "label": "FI Approved",
+                  "color": "green"
+                },
+                {
+                  "value": "9zMb",
+                  "label": "Sent to FI",
+                  "color": "pink"
+                },
+                {
+                  "value": "gbu4",
+                  "label": "Offer Received",
+                  "color": "lime"
+                },
+                {
+                  "value": "v7M4",
+                  "label": "Offer Accepted",
+                  "color": "tangerine"
+                },
+                {
+                  "value": "vynF",
+                  "label": "Completed",
+                  "color": "emerald"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fua5Fa1Qxop",
+          "sdkName": "owner",
+          "definition": {
+            "name": "Owner",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "f8pEr8HQf2q",
+          "sdkName": "invitation",
+          "definition": {
+            "name": "Invitation",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tw1h6XVgFWC",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fxpWB4r7LCh"
+            }
+          }
+        },
+        {
+          "id": "ftQ85LK5brs",
+          "sdkName": "businessDetailsJson",
+          "definition": {
+            "name": "Business Details JSON",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fc4rmnjWECP",
+          "sdkName": "bankDetailsJson",
+          "definition": {
+            "name": "Bank Details JSON",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcGXZSXba6S",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "feaazNYmMx3",
+          "sdkName": "updatedAt",
+          "definition": {
+            "name": "Updated At",
+            "type": "updated_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fhNQP58d7Mx",
+          "sdkName": "makerReviewedBy",
+          "definition": {
+            "name": "Maker Reviewed By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5m95M7h3Yg",
+          "sdkName": "makerReviewedAt",
+          "definition": {
+            "name": "Maker Reviewed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fdLXbV9ZxQ4",
+          "sdkName": "makerNotes",
+          "definition": {
+            "name": "Maker Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgMf7z8NiyK",
+          "sdkName": "checkerReviewedBy",
+          "definition": {
+            "name": "Checker Reviewed By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsMWGqzFEWP",
+          "sdkName": "checkerReviewedAt",
+          "definition": {
+            "name": "Checker Reviewed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "ffRgNf9m7Wn",
+          "sdkName": "checkerNotes",
+          "definition": {
+            "name": "Checker Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjxpCvr1Y2c",
+          "sdkName": "fiReviewedBy",
+          "definition": {
+            "name": "FI Reviewed By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvLbD7Co3nc",
+          "sdkName": "fiReviewedAt",
+          "definition": {
+            "name": "FI Reviewed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f9HuYKheF4r",
+          "sdkName": "fiReviewNotes",
+          "definition": {
+            "name": "FI Review Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fodC3StWMju",
+          "sdkName": "onboardingDocuments",
+          "definition": {
+            "name": "Onboarding Documents",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t4rGYeQQFeU",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fkmKEQxS7ae"
+            }
+          }
+        },
+        {
+          "id": "f7t5fNGcZtz",
+          "sdkName": "limitProposals",
+          "definition": {
+            "name": "Limit Proposals",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tcHpAdUQEtY",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f5RuY1p9mjB"
+            }
+          }
+        },
+        {
+          "id": "fwzgb3iGfnL",
+          "sdkName": "offerLetters",
+          "definition": {
+            "name": "Offer Letters",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tsZ7cho7iZA",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "faFgXdv1N2X"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4rGYeQQFeU",
+      "sdkName": "onboardingDocuments",
+      "name": "Onboarding Documents",
+      "primaryFieldId": "fcg57AmtXko",
+      "fields": [
+        {
+          "id": "fcg57AmtXko",
+          "sdkName": "documentName",
+          "definition": {
+            "name": "Document Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkmKEQxS7ae",
+          "sdkName": "onboarding",
+          "definition": {
+            "name": "Onboarding",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fodC3StWMju"
+            }
+          }
+        },
+        {
+          "id": "f3VXCNKj8uA",
+          "sdkName": "documentType",
+          "definition": {
+            "name": "Document Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mvHy",
+                  "label": "Business Registration",
+                  "color": "blue"
+                },
+                {
+                  "value": "dCTi",
+                  "label": "KRA PIN Certificate",
+                  "color": "blue"
+                },
+                {
+                  "value": "9bCa",
+                  "label": "CR12",
+                  "color": "blue"
+                },
+                {
+                  "value": "5RWC",
+                  "label": "National ID",
+                  "color": "purple"
+                },
+                {
+                  "value": "iUJG",
+                  "label": "Passport",
+                  "color": "purple"
+                },
+                {
+                  "value": "uGPG",
+                  "label": "Owner Photo",
+                  "color": "purple"
+                },
+                {
+                  "value": "bhQ8",
+                  "label": "Location Photo",
+                  "color": "orange"
+                },
+                {
+                  "value": "f551",
+                  "label": "Bank Statement",
+                  "color": "emerald"
+                },
+                {
+                  "value": "juTH",
+                  "label": "Business Permit",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f7igLFeg9z9",
+          "sdkName": "file",
+          "definition": {
+            "name": "File",
+            "type": "attachments",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2kmZJmMJYB",
+          "sdkName": "verificationStatus",
+          "definition": {
+            "name": "Verification Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "7o9Y",
+                  "label": "Pending Verification",
+                  "color": "yellow"
+                },
+                {
+                  "value": "p6Nu",
+                  "label": "Verified",
+                  "color": "green"
+                },
+                {
+                  "value": "e7zG",
+                  "label": "Rejected",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "frU7tNZhs9m",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frrEomipLGy",
+          "sdkName": "uploadedAt",
+          "definition": {
+            "name": "Uploaded At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t2JSPZ82pf1",
+      "sdkName": "entityOwners",
+      "name": "Entity Owners",
+      "primaryFieldId": "fwg5yVwSbok",
+      "fields": [
+        {
+          "id": "fwg5yVwSbok",
+          "sdkName": "fullName",
+          "definition": {
+            "name": "Full Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "find8bUbDyh",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fpBsAvitxeD"
+            }
+          }
+        },
+        {
+          "id": "fnDSPB94rbe",
+          "sdkName": "idNumber",
+          "definition": {
+            "name": "ID Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiiNXjKUnQ1",
+          "sdkName": "idType",
+          "definition": {
+            "name": "ID Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "fxaJ",
+                  "label": "National ID",
+                  "color": "blue"
+                },
+                {
+                  "value": "hY9J",
+                  "label": "Passport",
+                  "color": "purple"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fnqmUma4Fm1",
+          "sdkName": "dateOfBirth",
+          "definition": {
+            "name": "Date of Birth",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f7VNrfSnMKU",
+          "sdkName": "phone",
+          "definition": {
+            "name": "Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4z66wsDWU9",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsDuvfpzm9f",
+          "sdkName": "ownershipPercentage",
+          "definition": {
+            "name": "Ownership Percentage",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 0,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f59GjB9tK17",
+          "sdkName": "isPrimaryContact",
+          "definition": {
+            "name": "Is Primary Contact",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8APtvbeDKf",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tnRNdeQsMPb",
+      "sdkName": "entityOperators",
+      "name": "Entity Operators",
+      "primaryFieldId": "ffcfNghuVTo",
+      "fields": [
+        {
+          "id": "ffcfNghuVTo",
+          "sdkName": "fullName",
+          "definition": {
+            "name": "Full Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkQaXxToaEA",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fopvsynyWQq"
+            }
+          }
+        },
+        {
+          "id": "ftbe4gHKpZd",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "faFSd2GZFUd",
+          "sdkName": "phone",
+          "definition": {
+            "name": "Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnVh9LphaGd",
+          "sdkName": "role",
+          "definition": {
+            "name": "Role",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftYaT4iGKQv",
+          "sdkName": "isAuthorizedSignatory",
+          "definition": {
+            "name": "Is Authorized Signatory",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9imptFghnQ",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcHpAdUQEtY",
+      "sdkName": "limitProposals",
+      "name": "Limit Proposals",
+      "primaryFieldId": "f342dq1XZb7",
+      "fields": [
+        {
+          "id": "f342dq1XZb7",
+          "sdkName": "proposalNumber",
+          "definition": {
+            "name": "Proposal Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffWR3joQRjp",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f5yzQBbLZLM"
+            }
+          }
+        },
+        {
+          "id": "f1ccJvdK7A1",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fgUrvZ4WdkR"
+            }
+          }
+        },
+        {
+          "id": "f5RuY1p9mjB",
+          "sdkName": "onboarding",
+          "definition": {
+            "name": "Onboarding",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f7t5fNGcZtz"
+            }
+          }
+        },
+        {
+          "id": "f7gSfPkPuac",
+          "sdkName": "proposedAmount",
+          "definition": {
+            "name": "Proposed Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fdDA8j4Zqsr",
+          "sdkName": "approvedAmount",
+          "definition": {
+            "name": "Approved Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f2MeEJ64s5q",
+          "sdkName": "currency",
+          "definition": {
+            "name": "Currency",
+            "type": "single_line_text",
+            "template": {
+              "defaultValue": "KES"
+            }
+          }
+        },
+        {
+          "id": "fjn1fUYDe7X",
+          "sdkName": "preferredTenorDays",
+          "definition": {
+            "name": "Preferred Tenor Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fvoFYWEHvHi",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "pay8",
+                  "label": "Pending",
+                  "color": "yellow"
+                },
+                {
+                  "value": "pX4V",
+                  "label": "Assessed",
+                  "color": "blue"
+                },
+                {
+                  "value": "5B9K",
+                  "label": "Approved",
+                  "color": "green"
+                },
+                {
+                  "value": "jVmc",
+                  "label": "Rejected",
+                  "color": "red"
+                },
+                {
+                  "value": "3uUW",
+                  "label": "Under Review",
+                  "color": "purple"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "frZJjdTvVAG",
+          "sdkName": "justification",
+          "definition": {
+            "name": "Justification",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsioNQdN6ub",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fctyorF2H8v",
+          "sdkName": "assessedBy",
+          "definition": {
+            "name": "Assessed By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6kxZPwASH9",
+          "sdkName": "assessedAt",
+          "definition": {
+            "name": "Assessed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "feBVaDTT89M",
+          "sdkName": "approvedBy",
+          "definition": {
+            "name": "Approved By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fve76b8vEgy",
+          "sdkName": "approvedAt",
+          "definition": {
+            "name": "Approved At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f5FwfQc8TGb",
+          "sdkName": "rejectionReason",
+          "definition": {
+            "name": "Rejection Reason",
+            "type": "long_text",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tx4MkLpijxk",
+      "sdkName": "invoices",
+      "name": "Invoices",
+      "primaryFieldId": "ffoR4cfsyqg",
+      "fields": [
+        {
+          "id": "ffoR4cfsyqg",
+          "sdkName": "invoiceNumber",
+          "definition": {
+            "name": "Invoice Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9cWG93eJkk",
+          "sdkName": "issuerEntity",
+          "definition": {
+            "name": "Issuer Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fka1mcKb1fa"
+            }
+          }
+        },
+        {
+          "id": "f31ypqpGuug",
+          "sdkName": "recipientEntity",
+          "definition": {
+            "name": "Recipient Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f6WfXbg6nqD"
+            }
+          }
+        },
+        {
+          "id": "f3Ja3LadHeu",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fkzM3Maskbi"
+            }
+          }
+        },
+        {
+          "id": "fe4wJrjXCmj",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vsrj",
+                  "label": "Invoice Finance",
+                  "color": "purple"
+                },
+                {
+                  "value": "x1aF",
+                  "label": "Reverse Factoring",
+                  "color": "orange"
+                },
+                {
+                  "value": "1bB2",
+                  "label": "Invoice Discounting",
+                  "color": "blue"
+                },
+                {
+                  "value": "9ay7",
+                  "label": "Blended Finance",
+                  "color": "gray"
+                },
+                {
+                  "value": "jPCG",
+                  "label": "Leasing",
+                  "color": "red"
+                },
+                {
+                  "value": "etFc",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f1mizzDYo84",
+          "sdkName": "amount",
+          "definition": {
+            "name": "Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "ftWQyYeKPG5",
+          "sdkName": "issueDate",
+          "definition": {
+            "name": "Issue Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fvXBXp8DFm7",
+          "sdkName": "dueDate",
+          "definition": {
+            "name": "Due Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fmxMvqALZbR",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "r4CQ",
+                  "label": "Uploaded",
+                  "color": "gray"
+                },
+                {
+                  "value": "ejQ4",
+                  "label": "Pending Verification",
+                  "color": "yellow"
+                },
+                {
+                  "value": "cEV2",
+                  "label": "Verified",
+                  "color": "blue"
+                },
+                {
+                  "value": "rU54",
+                  "label": "Finance Eligible",
+                  "color": "emerald"
+                },
+                {
+                  "value": "u8dC",
+                  "label": "Finance Requested",
+                  "color": "indigo"
+                },
+                {
+                  "value": "7M9b",
+                  "label": "Financing Approved",
+                  "color": "green"
+                },
+                {
+                  "value": "r9N8",
+                  "label": "Fully Financed",
+                  "color": "green"
+                },
+                {
+                  "value": "1bTk",
+                  "label": "Early Paid",
+                  "color": "sky"
+                },
+                {
+                  "value": "nVHW",
+                  "label": "Partially Paid",
+                  "color": "orange"
+                },
+                {
+                  "value": "nAVX",
+                  "label": "Paid",
+                  "color": "emerald"
+                },
+                {
+                  "value": "uiZG",
+                  "label": "Financed",
+                  "color": "purple"
+                },
+                {
+                  "value": "auPu",
+                  "label": "Approved",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fvuZ7gcNcMQ",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmqnasp8uUP",
+          "sdkName": "document",
+          "definition": {
+            "name": "Document",
+            "type": "attachments",
+            "template": {}
+          }
+        },
+        {
+          "id": "feHqua4k9HQ",
+          "sdkName": "purchaseOrderNumber",
+          "definition": {
+            "name": "Purchase Order Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffQC8Ykwnuq",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fmPXMH4jSDi",
+          "sdkName": "financingRequests",
+          "definition": {
+            "name": "Financing Requests",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f1VgM7HoYcn"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "txzhFyx9eKF",
+      "sdkName": "financingRequests",
+      "name": "Financing Requests",
+      "primaryFieldId": "f6eid5WbyiP",
+      "fields": [
+        {
+          "id": "f6eid5WbyiP",
+          "sdkName": "requestNumber",
+          "definition": {
+            "name": "Request Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7c1YGPCPhB",
+          "sdkName": "requestingEntity",
+          "definition": {
+            "name": "Requesting Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fi2zfJwPSaL"
+            }
+          }
+        },
+        {
+          "id": "fd1BVPTBud6",
+          "sdkName": "borrowerEntity",
+          "definition": {
+            "name": "Borrower Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f46R22gsQ3z"
+            }
+          }
+        },
+        {
+          "id": "fdFAnawcJSy",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f2Rx2F1hFrW"
+            }
+          }
+        },
+        {
+          "id": "f1VgM7HoYcn",
+          "sdkName": "invoices",
+          "definition": {
+            "name": "Invoices",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tx4MkLpijxk",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fmPXMH4jSDi"
+            }
+          }
+        },
+        {
+          "id": "f66iYLxSCpz",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "9cFC",
+                  "label": "Invoice Finance",
+                  "color": "blue"
+                },
+                {
+                  "value": "8Ex5",
+                  "label": "Reverse Factoring",
+                  "color": "purple"
+                },
+                {
+                  "value": "mjUX",
+                  "label": "Invoice Discounting",
+                  "color": "teal"
+                },
+                {
+                  "value": "6rFf",
+                  "label": "Blended Finance",
+                  "color": "emerald"
+                },
+                {
+                  "value": "w6rz",
+                  "label": "Leasing",
+                  "color": "orange"
+                },
+                {
+                  "value": "uv9V",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fh7j7bunnUa",
+          "sdkName": "requestedAmount",
+          "definition": {
+            "name": "Requested Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fscEjAkvcCN",
+          "sdkName": "financeableAmount",
+          "definition": {
+            "name": "Financeable Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f44EtmAf1ZR",
+          "sdkName": "interestRate",
+          "definition": {
+            "name": "Interest Rate",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2
+            }
+          }
+        },
+        {
+          "id": "foMH4z9rGSv",
+          "sdkName": "tenorDays",
+          "definition": {
+            "name": "Tenor Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fiHDv4xoC5g",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "8Egd",
+                  "label": "Requested",
+                  "color": "gray"
+                },
+                {
+                  "value": "s5CH",
+                  "label": "Pending Approval",
+                  "color": "yellow"
+                },
+                {
+                  "value": "d4DG",
+                  "label": "Approved",
+                  "color": "green"
+                },
+                {
+                  "value": "idbs",
+                  "label": "Rejected",
+                  "color": "red"
+                },
+                {
+                  "value": "c6ZU",
+                  "label": "Disbursed",
+                  "color": "emerald"
+                },
+                {
+                  "value": "5zVN",
+                  "label": "Pending",
+                  "color": "purple"
+                },
+                {
+                  "value": "asCS",
+                  "label": "Under Review",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fsmnNUXNwKE",
+          "sdkName": "loan",
+          "definition": {
+            "name": "Loan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f6xqT9hKdb8"
+            }
+          }
+        },
+        {
+          "id": "f1WErSkG6R1",
+          "sdkName": "comments",
+          "definition": {
+            "name": "Comments",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbRQEFGbvHF",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fvh7K3urcGL",
+          "sdkName": "assessedBy",
+          "definition": {
+            "name": "Assessed By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnWsTohWReH",
+          "sdkName": "assessedAt",
+          "definition": {
+            "name": "Assessed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f8tiqrXQcH1",
+          "sdkName": "approvedBy",
+          "definition": {
+            "name": "Approved By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwxNo13P4zn",
+          "sdkName": "approvedAt",
+          "definition": {
+            "name": "Approved At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fhviazHDPuS",
+          "sdkName": "rejectionReason",
+          "definition": {
+            "name": "Rejection Reason",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkpaNK4RhKU",
+          "sdkName": "currency",
+          "definition": {
+            "name": "Currency",
+            "type": "single_line_text",
+            "template": {
+              "defaultValue": "KES"
+            }
+          }
+        },
+        {
+          "id": "f4knDUeRp99",
+          "sdkName": "journalEntries",
+          "definition": {
+            "name": "Journal Entries",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpuwNn6KizZ",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f2hdEWdBpW4"
+            }
+          }
+        },
+        {
+          "id": "foVwxg2Ma9s",
+          "sdkName": "selectedFiPricing",
+          "definition": {
+            "name": "Selected FI Pricing",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8MAqACwXo3",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fopzQq3CsVu"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tsZ7cho7iZA",
+      "sdkName": "offerLetters",
+      "name": "Offer Letters",
+      "primaryFieldId": "f6wgfQhV3i2",
+      "fields": [
+        {
+          "id": "f6wgfQhV3i2",
+          "sdkName": "offerNumber",
+          "definition": {
+            "name": "Offer Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fuUzfRuyPmU",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f2nZiPXaMzT"
+            }
+          }
+        },
+        {
+          "id": "faFgXdv1N2X",
+          "sdkName": "onboarding",
+          "definition": {
+            "name": "Onboarding",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t2D8B3qaVWy",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fwzgb3iGfnL"
+            }
+          }
+        },
+        {
+          "id": "fa7vyLhgfRt",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f2VYros6Z9A"
+            }
+          }
+        },
+        {
+          "id": "fv6YxRKwwCW",
+          "sdkName": "approvedLimit",
+          "definition": {
+            "name": "Approved Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fu9EiYta1tc",
+          "sdkName": "interestRate",
+          "definition": {
+            "name": "Interest Rate",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2
+            }
+          }
+        },
+        {
+          "id": "f9v38ZyYzfm",
+          "sdkName": "tenorDays",
+          "definition": {
+            "name": "Tenor Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "frer656WEMs",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ooVd",
+                  "label": "Generated",
+                  "color": "blue"
+                },
+                {
+                  "value": "ajrS",
+                  "label": "Accepted",
+                  "color": "green"
+                },
+                {
+                  "value": "aQF6",
+                  "label": "Rejected",
+                  "color": "red"
+                },
+                {
+                  "value": "nVb7",
+                  "label": "Expired",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fmg1wayqRxG",
+          "sdkName": "expiryDate",
+          "definition": {
+            "name": "Expiry Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f3tcmhGvb6N",
+          "sdkName": "document",
+          "definition": {
+            "name": "Document",
+            "type": "attachments",
+            "template": {}
+          }
+        },
+        {
+          "id": "fg1tf54Aycd",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffsd6V6gVgp",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tiJicohmR1u",
+      "sdkName": "financialInstitutions",
+      "name": "Financial Institutions",
+      "primaryFieldId": "f9qPjx3HPKJ",
+      "fields": [
+        {
+          "id": "f9qPjx3HPKJ",
+          "sdkName": "legalName",
+          "definition": {
+            "name": "Legal Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5RRMeV4RT1",
+          "sdkName": "tradingName",
+          "definition": {
+            "name": "Trading Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7tBetHaoA3",
+          "sdkName": "contactEmail",
+          "definition": {
+            "name": "Contact Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkuQ6xG7THD",
+          "sdkName": "contactPhone",
+          "definition": {
+            "name": "Contact Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "frrRfgrwkSA",
+          "sdkName": "bankCode",
+          "definition": {
+            "name": "Bank Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ff1gV6zanyA",
+          "sdkName": "swiftCode",
+          "definition": {
+            "name": "Swift Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsvpWVtQP7a",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "552B",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "oXJ6",
+                  "label": "Pending",
+                  "color": "yellow"
+                },
+                {
+                  "value": "9Ei5",
+                  "label": "Inactive",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f7DvrngyLGo",
+          "sdkName": "country",
+          "definition": {
+            "name": "Country",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1hha3QpAHQ",
+          "sdkName": "currency",
+          "definition": {
+            "name": "Currency",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7uZsL6puMU",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fpk8XdmUhN6",
+          "sdkName": "fiProgramPricing",
+          "definition": {
+            "name": "FI Program Pricing",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8MAqACwXo3",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fvh3WQrNkSV"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8MAqACwXo3",
+      "sdkName": "fiProgramPricing",
+      "name": "FI Program Pricing",
+      "primaryFieldId": "fxx5r9kPrkm",
+      "fields": [
+        {
+          "id": "fxx5r9kPrkm",
+          "sdkName": "pricingName",
+          "definition": {
+            "name": "Pricing Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvh3WQrNkSV",
+          "sdkName": "financialInstitution",
+          "definition": {
+            "name": "Financial Institution",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tiJicohmR1u",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fpk8XdmUhN6"
+            }
+          }
+        },
+        {
+          "id": "feMNx4JQhHb",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fwL4BLJjhcZ"
+            }
+          }
+        },
+        {
+          "id": "fsARRTGrp5V",
+          "sdkName": "productType",
+          "definition": {
+            "name": "Product Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "k5Ue",
+                  "label": "Invoice Finance",
+                  "color": "purple"
+                },
+                {
+                  "value": "hjpX",
+                  "label": "Reverse Factoring",
+                  "color": "orange"
+                },
+                {
+                  "value": "jkH3",
+                  "label": "Invoice Discounting",
+                  "color": "blue"
+                },
+                {
+                  "value": "tuRx",
+                  "label": "Blended Finance",
+                  "color": "gray"
+                },
+                {
+                  "value": "7ViL",
+                  "label": "Leasing",
+                  "color": "red"
+                },
+                {
+                  "value": "fgyh",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fbG2KYmUdX7",
+          "sdkName": "minLimit",
+          "definition": {
+            "name": "Min Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f7CK3sReoTc",
+          "sdkName": "maxLimit",
+          "definition": {
+            "name": "Max Limit",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f8GJY2abU6S",
+          "sdkName": "transactionFeeRate",
+          "definition": {
+            "name": "Transaction Fee Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "faNVTjsd8dL",
+          "sdkName": "processingFeeFixed",
+          "definition": {
+            "name": "Processing Fee Fixed",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fkJAgnun1FD",
+          "sdkName": "processingFeeRate",
+          "definition": {
+            "name": "Processing Fee Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fvGt59Umopt",
+          "sdkName": "penaltyFeeRate",
+          "definition": {
+            "name": "Penalty Fee Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fsYqLqd8h1X",
+          "sdkName": "pastDueDailyRate",
+          "definition": {
+            "name": "Past Due Daily Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 4,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fgWxK7GPwvJ",
+          "sdkName": "repaymentBankAccount",
+          "definition": {
+            "name": "Repayment Bank Account",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6Q1Gk2iJfD",
+          "sdkName": "tiersJson",
+          "definition": {
+            "name": "Tiers JSON",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvmiiPT5aFH",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "v3CE",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "hx2M",
+                  "label": "Inactive",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fktnAMVKjBE",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f33VVH7aqdB",
+          "sdkName": "autoDisburse",
+          "definition": {
+            "name": "Auto Disburse",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": false
+            }
+          }
+        },
+        {
+          "id": "fopzQq3CsVu",
+          "sdkName": "financingRequests",
+          "definition": {
+            "name": "Financing Requests",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "foVwxg2Ma9s"
+            }
+          }
+        },
+        {
+          "id": "feXTJ1K8Rjx",
+          "sdkName": "interestRate",
+          "definition": {
+            "name": "Interest Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fuy8wTTHb7i",
+          "sdkName": "tenorDays",
+          "definition": {
+            "name": "Tenor Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f2MqpfaYxot",
+          "sdkName": "troveFeeRate",
+          "definition": {
+            "name": "Trove Fee Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fn1DkVGDJt9",
+          "sdkName": "troveFeeFixed",
+          "definition": {
+            "name": "Trove Fee Fixed",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fs6EvxChtZU",
+          "sdkName": "fiChargeRate",
+          "definition": {
+            "name": "FI Charge Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 2,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f84yTYhbfxB",
+          "sdkName": "fiChargeFixed",
+          "definition": {
+            "name": "FI Charge Fixed",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ti8cuXDXz1M",
+      "sdkName": "glAccounts",
+      "name": "GL Accounts",
+      "primaryFieldId": "fibz3hR2h4z",
+      "fields": [
+        {
+          "id": "fibz3hR2h4z",
+          "sdkName": "accountNumber",
+          "definition": {
+            "name": "Account Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fobKL9jWV2x",
+          "sdkName": "accountName",
+          "definition": {
+            "name": "Account Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwVQcBEGAaH",
+          "sdkName": "accountType",
+          "definition": {
+            "name": "Account Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "bDct",
+                  "label": "Asset",
+                  "color": "blue"
+                },
+                {
+                  "value": "uMb2",
+                  "label": "Liability",
+                  "color": "orange"
+                },
+                {
+                  "value": "h23Z",
+                  "label": "Equity",
+                  "color": "purple"
+                },
+                {
+                  "value": "2PyE",
+                  "label": "Revenue",
+                  "color": "green"
+                },
+                {
+                  "value": "sFEc",
+                  "label": "Expense",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fhhtMqmD6C2",
+          "sdkName": "subType",
+          "definition": {
+            "name": "Sub Type",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9h7SA4iPK6",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvUVEowkQqJ",
+          "sdkName": "isActive",
+          "definition": {
+            "name": "Is Active",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": true
+            }
+          }
+        },
+        {
+          "id": "faPqx5fhzGW",
+          "sdkName": "currentBalance",
+          "definition": {
+            "name": "Current Balance",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fkfanxLFMMQ",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f3EqmJsBbUk",
+          "sdkName": "journalLines",
+          "definition": {
+            "name": "Journal Lines",
+            "type": "linked_record",
+            "template": {
+              "tableId": "trEjVjszGpw",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "ffvXzZPzrY1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tpuwNn6KizZ",
+      "sdkName": "journalEntries",
+      "name": "Journal Entries",
+      "primaryFieldId": "f8xKj79TMJZ",
+      "fields": [
+        {
+          "id": "f8xKj79TMJZ",
+          "sdkName": "entryNumber",
+          "definition": {
+            "name": "Entry Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fv912aLizfg",
+          "sdkName": "entryDate",
+          "definition": {
+            "name": "Entry Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fj3mmoiYs6B",
+          "sdkName": "reference",
+          "definition": {
+            "name": "Reference",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9uH2kWF81D",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsq97ooqBh5",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "rRxu",
+                  "label": "Draft",
+                  "color": "gray"
+                },
+                {
+                  "value": "sWoo",
+                  "label": "Posted",
+                  "color": "green"
+                },
+                {
+                  "value": "8P7q",
+                  "label": "Reversed",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5zip7MmG2X",
+          "sdkName": "totalAmount",
+          "definition": {
+            "name": "Total Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f7afRALTToE",
+          "sdkName": "postedBy",
+          "definition": {
+            "name": "Posted By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f58CLPWvo7q",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "frm1iMBypPR"
+            }
+          }
+        },
+        {
+          "id": "f1JCDqoZSFq",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "ffps64L6FVV"
+            }
+          }
+        },
+        {
+          "id": "f2hdEWdBpW4",
+          "sdkName": "financingRequest",
+          "definition": {
+            "name": "Financing Request",
+            "type": "linked_record",
+            "template": {
+              "tableId": "txzhFyx9eKF",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f4knDUeRp99"
+            }
+          }
+        },
+        {
+          "id": "f4Kg5oDS5nk",
+          "sdkName": "loan",
+          "definition": {
+            "name": "Loan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fwVaH7xdVYm"
+            }
+          }
+        },
+        {
+          "id": "fia1MPpd7cv",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fdKhq7J3pCR",
+          "sdkName": "journalLines",
+          "definition": {
+            "name": "Journal Lines",
+            "type": "linked_record",
+            "template": {
+              "tableId": "trEjVjszGpw",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fn5bf3pWE8g"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "trEjVjszGpw",
+      "sdkName": "journalLines",
+      "name": "Journal Lines",
+      "primaryFieldId": "fqJgvuYpdUH",
+      "fields": [
+        {
+          "id": "fqJgvuYpdUH",
+          "sdkName": "lineNumber",
+          "definition": {
+            "name": "Line Number",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fn5bf3pWE8g",
+          "sdkName": "journalEntry",
+          "definition": {
+            "name": "Journal Entry",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tpuwNn6KizZ",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fdKhq7J3pCR"
+            }
+          }
+        },
+        {
+          "id": "ffvXzZPzrY1",
+          "sdkName": "glAccount",
+          "definition": {
+            "name": "GL Account",
+            "type": "linked_record",
+            "template": {
+              "tableId": "ti8cuXDXz1M",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f3EqmJsBbUk"
+            }
+          }
+        },
+        {
+          "id": "fg7EWppTKHy",
+          "sdkName": "debitAmount",
+          "definition": {
+            "name": "Debit Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f473w2CrtxT",
+          "sdkName": "creditAmount",
+          "definition": {
+            "name": "Credit Amount",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f2Yf2WFesa6",
+          "sdkName": "narration",
+          "definition": {
+            "name": "Narration",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6qgDdWLThE",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "thNjhfLFcFE",
+      "sdkName": "creditScores",
+      "name": "Credit Scores",
+      "primaryFieldId": "foPqBmM9KjK",
+      "fields": [
+        {
+          "id": "foPqBmM9KjK",
+          "sdkName": "entityName",
+          "definition": {
+            "name": "Entity Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fk9Nxy6skiy",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fwCk2R4Dd2F"
+            }
+          }
+        },
+        {
+          "id": "f5yj6Zz9KWi",
+          "sdkName": "score",
+          "definition": {
+            "name": "Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fo8pA1bM746",
+          "sdkName": "rating",
+          "definition": {
+            "name": "Rating",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "1R5P",
+                  "label": "A+",
+                  "color": "emerald"
+                },
+                {
+                  "value": "cQAa",
+                  "label": "A",
+                  "color": "green"
+                },
+                {
+                  "value": "jTTS",
+                  "label": "B",
+                  "color": "blue"
+                },
+                {
+                  "value": "7oTq",
+                  "label": "C",
+                  "color": "orange"
+                },
+                {
+                  "value": "8UM9",
+                  "label": "D",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f4gZBXf51BY",
+          "sdkName": "paymentTimelinessScore",
+          "definition": {
+            "name": "Payment Timeliness Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f3Mh21ZYRSA",
+          "sdkName": "tradeVolumeScore",
+          "definition": {
+            "name": "Trade Volume Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f17zyyHy3eb",
+          "sdkName": "defaultRateScore",
+          "definition": {
+            "name": "Default Rate Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f5vxcbzHrPa",
+          "sdkName": "entityAgeScore",
+          "definition": {
+            "name": "Entity Age Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f1eRkN4Qs5G",
+          "sdkName": "productDiversityScore",
+          "definition": {
+            "name": "Product Diversity Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fxaWhGMXXW3",
+          "sdkName": "onTimePercent",
+          "definition": {
+            "name": "On Time Percent",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 1,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f4G8362KvFc",
+          "sdkName": "totalTradeVolume",
+          "definition": {
+            "name": "Total Trade Volume",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fvs6qgi2xH8",
+          "sdkName": "defaultRate",
+          "definition": {
+            "name": "Default Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 1,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f4wagQyzewX",
+          "sdkName": "aiSummary",
+          "definition": {
+            "name": "AI Summary",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fb9o8kz9nkJ",
+          "sdkName": "computedAt",
+          "definition": {
+            "name": "Computed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tiCvFMUsTf4",
+      "sdkName": "riskAlerts",
+      "name": "Risk Alerts",
+      "primaryFieldId": "foUXXdox2pX",
+      "fields": [
+        {
+          "id": "foUXXdox2pX",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8eCrFUhAtr",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "faNk6suq4ak"
+            }
+          }
+        },
+        {
+          "id": "fiwzJPchWBo",
+          "sdkName": "alertType",
+          "definition": {
+            "name": "Alert Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "bkgY",
+                  "label": "Invoice Volume Spike",
+                  "color": "red"
+                },
+                {
+                  "value": "6Zfj",
+                  "label": "Payment Pattern Shift",
+                  "color": "orange"
+                },
+                {
+                  "value": "auVS",
+                  "label": "Credit Score Decline",
+                  "color": "yellow"
+                },
+                {
+                  "value": "wHm8",
+                  "label": "Rapid Financing Requests",
+                  "color": "red"
+                },
+                {
+                  "value": "k4LP",
+                  "label": "Potential Duplicate Invoice",
+                  "color": "orange"
+                },
+                {
+                  "value": "o5bD",
+                  "label": "Limit Breach Attempt",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5zB36gidBC",
+          "sdkName": "severity",
+          "definition": {
+            "name": "Severity",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mCFv",
+                  "label": "Critical",
+                  "color": "red"
+                },
+                {
+                  "value": "8hFD",
+                  "label": "Warning",
+                  "color": "orange"
+                },
+                {
+                  "value": "5AZx",
+                  "label": "Info",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f9marRen5me",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwqLjxPigL4",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mKi2",
+                  "label": "Open",
+                  "color": "red"
+                },
+                {
+                  "value": "ed55",
+                  "label": "Investigating",
+                  "color": "orange"
+                },
+                {
+                  "value": "vQF5",
+                  "label": "Resolved",
+                  "color": "green"
+                },
+                {
+                  "value": "eVDm",
+                  "label": "Dismissed",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "ftoTT761Bbg",
+          "sdkName": "resolvedBy",
+          "definition": {
+            "name": "Resolved By",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "ffmfgrYphkN",
+          "sdkName": "resolutionNotes",
+          "definition": {
+            "name": "Resolution Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2GeoCeiCgm",
+          "sdkName": "detectedAt",
+          "definition": {
+            "name": "Detected At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fjwAwge76vH",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f9DrrDGFKAH"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t9LRGqwtDtt",
+      "sdkName": "bankAccounts",
+      "name": "Bank Accounts",
+      "primaryFieldId": "fbKjZg2eNFv",
+      "fields": [
+        {
+          "id": "fbKjZg2eNFv",
+          "sdkName": "accountName",
+          "definition": {
+            "name": "Account Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f23LMFtngFV",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fnnV3yWgpXM"
+            }
+          }
+        },
+        {
+          "id": "fb4UdGEoEsN",
+          "sdkName": "bankName",
+          "definition": {
+            "name": "Bank Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frV9J7uYhzD",
+          "sdkName": "branchName",
+          "definition": {
+            "name": "Branch Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fx3xJwfMNak",
+          "sdkName": "accountNumber",
+          "definition": {
+            "name": "Account Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjwTLqRCstm",
+          "sdkName": "bankCode",
+          "definition": {
+            "name": "Bank Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fv5jzQhv2RB",
+          "sdkName": "branchCode",
+          "definition": {
+            "name": "Branch Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f34kKtVsx2R",
+          "sdkName": "swiftCode",
+          "definition": {
+            "name": "Swift Code",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5maD5qYu8V",
+          "sdkName": "accountType",
+          "definition": {
+            "name": "Account Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "n9bN",
+                  "label": "Current",
+                  "color": "blue"
+                },
+                {
+                  "value": "qoA6",
+                  "label": "Savings",
+                  "color": "green"
+                },
+                {
+                  "value": "3dGJ",
+                  "label": "Mobile Money",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fjSQam4DgyP",
+          "sdkName": "mobileMoneyNumber",
+          "definition": {
+            "name": "Mobile Money Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffcTxhwxAXG",
+          "sdkName": "currency",
+          "definition": {
+            "name": "Currency",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "9pZX",
+                  "label": "KES",
+                  "color": "green"
+                },
+                {
+                  "value": "1iS9",
+                  "label": "USD",
+                  "color": "blue"
+                },
+                {
+                  "value": "nLmw",
+                  "label": "EUR",
+                  "color": "purple"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fseVnE2mMEP",
+          "sdkName": "isPrimary",
+          "definition": {
+            "name": "Is Primary",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgHSuy7NHVf",
+          "sdkName": "isVerified",
+          "definition": {
+            "name": "Is Verified",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fta4BKXreEo",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "7wzM",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "4B74",
+                  "label": "Inactive",
+                  "color": "gray"
+                },
+                {
+                  "value": "exPn",
+                  "label": "Pending Verification",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fq2ZKe6Prwh",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcE17Djj9si",
+      "sdkName": "assetSchedules",
+      "name": "Asset Schedules",
+      "primaryFieldId": "fa3CT863FfW",
+      "fields": [
+        {
+          "id": "fa3CT863FfW",
+          "sdkName": "assetReference",
+          "definition": {
+            "name": "Asset Reference",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foF6CFhQt8y",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f5HvZnRc3kY"
+            }
+          }
+        },
+        {
+          "id": "fqoXvu84iwB",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fqqw9D6DyHT"
+            }
+          }
+        },
+        {
+          "id": "f7jmmxy6kA9",
+          "sdkName": "loan",
+          "definition": {
+            "name": "Loan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f4rnXhRbqyz"
+            }
+          }
+        },
+        {
+          "id": "fkLmDedkfpK",
+          "sdkName": "assetDescription",
+          "definition": {
+            "name": "Asset Description",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fuuyuHy7UzW",
+          "sdkName": "assetCategory",
+          "definition": {
+            "name": "Asset Category",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "14uB",
+                  "label": "Vehicle",
+                  "color": "blue"
+                },
+                {
+                  "value": "rmRr",
+                  "label": "Equipment",
+                  "color": "green"
+                },
+                {
+                  "value": "mXAn",
+                  "label": "Machinery",
+                  "color": "orange"
+                },
+                {
+                  "value": "12sD",
+                  "label": "Property",
+                  "color": "purple"
+                },
+                {
+                  "value": "fDEV",
+                  "label": "Other",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fhYBfrxpDQc",
+          "sdkName": "serialNumber",
+          "definition": {
+            "name": "Serial Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6h5DfrnKTR",
+          "sdkName": "makeAndModel",
+          "definition": {
+            "name": "Make And Model",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f25ec8wfFYH",
+          "sdkName": "yearOfManufacture",
+          "definition": {
+            "name": "Year Of Manufacture",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f9ddGDErDQx",
+          "sdkName": "assetValue",
+          "definition": {
+            "name": "Asset Value",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fb8UArbU6SK",
+          "sdkName": "residualValue",
+          "definition": {
+            "name": "Residual Value",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "f61cPQQxHTo",
+          "sdkName": "leaseTermMonths",
+          "definition": {
+            "name": "Lease Term Months",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f6ttAcj4f3Z",
+          "sdkName": "depreciationRate",
+          "definition": {
+            "name": "Depreciation Rate",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 0,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "fd7mDjq5h5s",
+          "sdkName": "leaseStartDate",
+          "definition": {
+            "name": "Lease Start Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fbXh4tfSAgu",
+          "sdkName": "leaseEndDate",
+          "definition": {
+            "name": "Lease End Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fbhDKwiaNhJ",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "6ayF",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "t3pc",
+                  "label": "Returned",
+                  "color": "blue"
+                },
+                {
+                  "value": "td7x",
+                  "label": "Written Off",
+                  "color": "red"
+                },
+                {
+                  "value": "kcbK",
+                  "label": "Pending",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5H6HFv3jUX",
+          "sdkName": "insurancePolicyNumber",
+          "definition": {
+            "name": "Insurance Policy Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4RTXohUFZu",
+          "sdkName": "insuranceExpiry",
+          "definition": {
+            "name": "Insurance Expiry",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f7HUXonyKYt",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcF5iYnCP6w",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tjWPyzHcztg",
+      "sdkName": "warehouseReceipts",
+      "name": "Warehouse Receipts",
+      "primaryFieldId": "fovN8hnVqw5",
+      "fields": [
+        {
+          "id": "fovN8hnVqw5",
+          "sdkName": "receiptNumber",
+          "definition": {
+            "name": "Receipt Number",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f885dRWr51E",
+          "sdkName": "entity",
+          "definition": {
+            "name": "Entity",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fojtDFw8YLt"
+            }
+          }
+        },
+        {
+          "id": "fwfXVaDQxLU",
+          "sdkName": "program",
+          "definition": {
+            "name": "Program",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fm9AA6MPu8K"
+            }
+          }
+        },
+        {
+          "id": "fnqzXYmEnLH",
+          "sdkName": "loan",
+          "definition": {
+            "name": "Loan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tvqGcFhhKDv",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f43XgmGLzCv"
+            }
+          }
+        },
+        {
+          "id": "f5sLxyL4RTA",
+          "sdkName": "warehouseName",
+          "definition": {
+            "name": "Warehouse Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkjka7m7L4M",
+          "sdkName": "warehouseLocation",
+          "definition": {
+            "name": "Warehouse Location",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhy8qhmqaNJ",
+          "sdkName": "commodityType",
+          "definition": {
+            "name": "Commodity Type",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3sWbfsMMLA",
+          "sdkName": "grade",
+          "definition": {
+            "name": "Grade",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmyjQRVQZSf",
+          "sdkName": "quantity",
+          "definition": {
+            "name": "Quantity",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2
+            }
+          }
+        },
+        {
+          "id": "frrMxtUwvnL",
+          "sdkName": "unitOfMeasure",
+          "definition": {
+            "name": "Unit Of Measure",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fv5ekJ67B52",
+          "sdkName": "unitPrice",
+          "definition": {
+            "name": "Unit Price",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "fkM1VCLyEiu",
+          "sdkName": "totalValue",
+          "definition": {
+            "name": "Total Value",
+            "type": "currency",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 2,
+              "currencySymbol": "KES"
+            }
+          }
+        },
+        {
+          "id": "ft2V4PXEZ9y",
+          "sdkName": "dateDeposited",
+          "definition": {
+            "name": "Date Deposited",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "ftWRYdh8fwU",
+          "sdkName": "expiryDate",
+          "definition": {
+            "name": "Expiry Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fj4Ebs6994n",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ctk5",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "vFZr",
+                  "label": "Released",
+                  "color": "blue"
+                },
+                {
+                  "value": "jcr8",
+                  "label": "Expired",
+                  "color": "red"
+                },
+                {
+                  "value": "9v1z",
+                  "label": "Pledged",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fu1UyKAccTp",
+          "sdkName": "collateralManager",
+          "definition": {
+            "name": "Collateral Manager",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frq9Kehqenk",
+          "sdkName": "receiptDocument",
+          "definition": {
+            "name": "Receipt Document",
+            "type": "attachments",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4Gfc4ndcUD",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcffzboW5gE",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tnRuEHzGA1y",
+      "sdkName": "reminderTemplates",
+      "name": "Reminder Templates",
+      "primaryFieldId": "fvvqygiAQrD",
+      "fields": [
+        {
+          "id": "fvvqygiAQrD",
+          "sdkName": "templateName",
+          "definition": {
+            "name": "Template Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqt2WmUXaNL",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "5quQ",
+                  "label": "Overdue Payment",
+                  "color": "purple"
+                },
+                {
+                  "value": "ipbY",
+                  "label": "Document Request",
+                  "color": "orange"
+                },
+                {
+                  "value": "t4N5",
+                  "label": "Limit Expiry",
+                  "color": "blue"
+                },
+                {
+                  "value": "cscq",
+                  "label": "Onboarding Follow-up",
+                  "color": "gray"
+                },
+                {
+                  "value": "cEhc",
+                  "label": "Offer Expiry",
+                  "color": "red"
+                },
+                {
+                  "value": "uro9",
+                  "label": "General",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fa6WQBgWQ6j",
+          "sdkName": "subject",
+          "definition": {
+            "name": "Subject",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2K2PxqZz4x",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftwEBNWjRJ7",
+          "sdkName": "channel",
+          "definition": {
+            "name": "Channel",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "r6GX",
+                  "label": "In-App Notification",
+                  "color": "purple"
+                },
+                {
+                  "value": "mNFa",
+                  "label": "Email",
+                  "color": "orange"
+                },
+                {
+                  "value": "h7ga",
+                  "label": "SMS",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "froHjoRB94f",
+          "sdkName": "active",
+          "definition": {
+            "name": "Active",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": true
+            }
+          }
+        },
+        {
+          "id": "fgwwp6yjQDu",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f7SEiANrieQ",
+          "sdkName": "updatedAt",
+          "definition": {
+            "name": "Updated At",
+            "type": "updated_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t12qm8kYfT8",
+      "sdkName": "apiPartners",
+      "name": "API Partners",
+      "primaryFieldId": "fqdwP8dNXJc",
+      "fields": [
+        {
+          "id": "fqdwP8dNXJc",
+          "sdkName": "partnerName",
+          "definition": {
+            "name": "Partner Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpDuNcnpwUt",
+          "sdkName": "partnerType",
+          "definition": {
+            "name": "Partner Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vyZN",
+                  "label": "FI",
+                  "color": "blue"
+                },
+                {
+                  "value": "fLkR",
+                  "label": "Master Anchor",
+                  "color": "purple"
+                },
+                {
+                  "value": "ej8g",
+                  "label": "Fintech",
+                  "color": "emerald"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f2z9SBWQqmT",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "tYYk",
+                  "label": "Pending Approval",
+                  "color": "yellow"
+                },
+                {
+                  "value": "sHW5",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "tVBJ",
+                  "label": "Suspended",
+                  "color": "orange"
+                },
+                {
+                  "value": "gy6y",
+                  "label": "Revoked",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fkRB7Kcoceh",
+          "sdkName": "contactName",
+          "definition": {
+            "name": "Contact Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8DRn61va2k",
+          "sdkName": "contactEmail",
+          "definition": {
+            "name": "Contact Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "fu1BbJr1U5S",
+          "sdkName": "contactPhone",
+          "definition": {
+            "name": "Contact Phone",
+            "type": "phone_number",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbrGxUBetRa",
+          "sdkName": "companyRegistration",
+          "definition": {
+            "name": "Company Registration",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbRzRaX9mE9",
+          "sdkName": "country",
+          "definition": {
+            "name": "Country",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foL7GQ7ezHM",
+          "sdkName": "website",
+          "definition": {
+            "name": "Website",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "frubtMb1Cha",
+          "sdkName": "enabledProducts",
+          "definition": {
+            "name": "Enabled Products",
+            "type": "multiple_select",
+            "template": {
+              "options": [
+                {
+                  "value": "af9h",
+                  "label": "Invoice Finance",
+                  "color": "blue"
+                },
+                {
+                  "value": "qh6J",
+                  "label": "Reverse Factoring",
+                  "color": "purple"
+                },
+                {
+                  "value": "5Ydw",
+                  "label": "Invoice Discounting",
+                  "color": "sky"
+                },
+                {
+                  "value": "4Dje",
+                  "label": "Blended Finance",
+                  "color": "emerald"
+                },
+                {
+                  "value": "5dtC",
+                  "label": "Leasing",
+                  "color": "orange"
+                },
+                {
+                  "value": "egGC",
+                  "label": "Warehouse Receipt",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fm6sndzGqRH",
+          "sdkName": "sandboxEnabled",
+          "definition": {
+            "name": "Sandbox Enabled",
+            "type": "checkbox",
+            "template": {
+              "defaultValue": true
+            }
+          }
+        },
+        {
+          "id": "fe7ySTJ7k9P",
+          "sdkName": "productionEnabled",
+          "definition": {
+            "name": "Production Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbHdksg2cz9",
+          "sdkName": "approvedBy",
+          "definition": {
+            "name": "Approved By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5ymfaJsQKq",
+          "sdkName": "approvedAt",
+          "definition": {
+            "name": "Approved At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fwRcknLxNd1",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftVVg5ACLQe",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fcqudhV2APe",
+          "sdkName": "updatedAt",
+          "definition": {
+            "name": "Updated At",
+            "type": "updated_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnRrADMW4jz",
+          "sdkName": "apiKeys",
+          "definition": {
+            "name": "API Keys",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tdL4X6DeBPZ",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f8rJwq95vtj"
+            }
+          }
+        },
+        {
+          "id": "f9duY2q4SEn",
+          "sdkName": "apiActivityLog",
+          "definition": {
+            "name": "API Activity Log",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tkV7mZgbfAN",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fpTdoUroPcS"
+            }
+          }
+        },
+        {
+          "id": "fbkbN3pwvun",
+          "sdkName": "backofficeUsers",
+          "definition": {
+            "name": "Backoffice Users",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tuG3VPBdCyC",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fwGEz3M7efr"
+            }
+          }
+        },
+        {
+          "id": "fvjQY1jHNUA",
+          "sdkName": "entities",
+          "definition": {
+            "name": "Entities",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f9haD5u37Kf"
+            }
+          }
+        },
+        {
+          "id": "f5SrFdr8Vh8",
+          "sdkName": "programs",
+          "definition": {
+            "name": "Programs",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t8226ZRkyTz",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fxrKsiuzX3j"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tdL4X6DeBPZ",
+      "sdkName": "apiKeys",
+      "name": "API Keys",
+      "primaryFieldId": "ftBAkaBNJja",
+      "fields": [
+        {
+          "id": "ftBAkaBNJja",
+          "sdkName": "keyPrefix",
+          "definition": {
+            "name": "Key Prefix",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8rJwq95vtj",
+          "sdkName": "apiPartner",
+          "definition": {
+            "name": "API Partner",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t12qm8kYfT8",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fnRrADMW4jz"
+            }
+          }
+        },
+        {
+          "id": "fjwg1P75fC7",
+          "sdkName": "environment",
+          "definition": {
+            "name": "Environment",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "qguC",
+                  "label": "Sandbox",
+                  "color": "yellow"
+                },
+                {
+                  "value": "8QMB",
+                  "label": "Production",
+                  "color": "green"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fxx2ckz6KMu",
+          "sdkName": "keyHash",
+          "definition": {
+            "name": "Key Hash",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fj5BrmGYma5",
+          "sdkName": "keyHint",
+          "definition": {
+            "name": "Key Hint",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmHGT5e14q2",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcqZusJajGD",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "k9y4",
+                  "label": "Active",
+                  "color": "green"
+                },
+                {
+                  "value": "rReQ",
+                  "label": "Revoked",
+                  "color": "red"
+                },
+                {
+                  "value": "5zno",
+                  "label": "Expired",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fdWmguaiunG",
+          "sdkName": "lastUsedAt",
+          "definition": {
+            "name": "Last Used At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f7AmAxXgjfQ",
+          "sdkName": "revokedAt",
+          "definition": {
+            "name": "Revoked At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnFwFBD4CtT",
+          "sdkName": "revokedBy",
+          "definition": {
+            "name": "Revoked By",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8sYpopK1uU",
+          "sdkName": "expiresAt",
+          "definition": {
+            "name": "Expires At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f9JsBoNYzSt",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fgqQgH9B5PT",
+          "sdkName": "apiActivityLog",
+          "definition": {
+            "name": "API Activity Log",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tkV7mZgbfAN",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "ffVNVd97dWL"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tkV7mZgbfAN",
+      "sdkName": "apiActivityLog",
+      "name": "API Activity Log",
+      "primaryFieldId": "foNGDFr7VRc",
+      "fields": [
+        {
+          "id": "foNGDFr7VRc",
+          "sdkName": "logId",
+          "definition": {
+            "name": "Log ID",
+            "type": "autonumber",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpTdoUroPcS",
+          "sdkName": "apiPartner",
+          "definition": {
+            "name": "API Partner",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t12qm8kYfT8",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f9duY2q4SEn"
+            }
+          }
+        },
+        {
+          "id": "ffVNVd97dWL",
+          "sdkName": "apiKey",
+          "definition": {
+            "name": "API Key",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tdL4X6DeBPZ",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fgqQgH9B5PT"
+            }
+          }
+        },
+        {
+          "id": "fchmKUsbDtL",
+          "sdkName": "environment",
+          "definition": {
+            "name": "Environment",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "3YyJ",
+                  "label": "Sandbox",
+                  "color": "yellow"
+                },
+                {
+                  "value": "9KD1",
+                  "label": "Production",
+                  "color": "green"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fvoEtbm5cFg",
+          "sdkName": "endpoint",
+          "definition": {
+            "name": "Endpoint",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f15m4AcPSBY",
+          "sdkName": "method",
+          "definition": {
+            "name": "Method",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "u7EX",
+                  "label": "GET",
+                  "color": "blue"
+                },
+                {
+                  "value": "fAX3",
+                  "label": "POST",
+                  "color": "green"
+                },
+                {
+                  "value": "dbtQ",
+                  "label": "PUT",
+                  "color": "orange"
+                },
+                {
+                  "value": "jeQQ",
+                  "label": "DELETE",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f4CtrPXo6pG",
+          "sdkName": "statusCode",
+          "definition": {
+            "name": "Status Code",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "forJx5bRdte",
+          "sdkName": "entityCreated",
+          "definition": {
+            "name": "Entity Created",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgmtim5RuLU",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fhFRMum2Msx"
+            }
+          }
+        },
+        {
+          "id": "fpapdTTquRk",
+          "sdkName": "requestSummary",
+          "definition": {
+            "name": "Request Summary",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ff6211SNARD",
+          "sdkName": "errorMessage",
+          "definition": {
+            "name": "Error Message",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiMsH4JmuPK",
+          "sdkName": "ipAddress",
+          "definition": {
+            "name": "IP Address",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fueW6565dRp",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

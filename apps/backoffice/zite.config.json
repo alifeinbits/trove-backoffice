@@ -1,0 +1,24 @@
+{
+  "id": "gmbnpm2z7t",
+  "accessMode": "external",
+  "seoSettings": {
+    "title": "Trove Backoffice",
+    "description": "Operations portal for Trove supply chain finance platform",
+    "thumbnailUrl": "",
+    "faviconUrl": "https://images.fillout.com/orgid-812173/flowpublicid-gmbnpm2z7t/widgetid-default/ppt4RAGQVLmZACUohmuA3u/trove-mark.svg"
+  },
+  "integrations": {
+    "gemini": {
+      "type": "gemini",
+      "connectionId": "svc_519393"
+    }
+  },
+  "authentication": {
+    "signup": "open",
+    "authenticationMethods": {
+      "sso": false,
+      "magicLink": false,
+      "googleSignIn": true
+    }
+  }
+}
